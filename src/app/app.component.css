@@ -1,4 +1,10 @@
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: aquamarine;
+    color: #09f;
+}
+div {
+    max-width: 500px;
+    font-size: 32px;
+    margin: 0 auto;
+    text-align:center;
 }

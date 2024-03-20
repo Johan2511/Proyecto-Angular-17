@@ -1,4 +1,22 @@
 <!-- <h1>Hola mundo desde {{ city.toUpperCase() }}</h1> -->
-<app-user />
+
+<div>
+    <h1>¿Qué me parece Angular</h1>
+    <article>
+        <p>Angular es un framework de desarrollo frontend creado por Google. Me parece una herramienta muy poderosa para construir aplicaciones web complejas y escalables. Su capacidad para manejar la complejidad de las aplicaciones modernas, gracias a características como el enlace de datos bidireccional, las directivas y la inyección de dependencias, la hace muy atractiva para proyectos de gran envergadura.</p>
+        <p>Su estructura basada en componentes y su enfoque en la arquitectura MVC (Modelo-Vista-Controlador) facilita la organización del código y la colaboración en equipos de desarrollo. Además, su amplia comunidad y la cantidad de recursos disponibles hacen que aprender y trabajar con Angular sea una experiencia gratificante y productiva para los desarrolladores.</p>
+    </article>
+
+    @defer (on viewport) {
+        <app-comments />
+    } @placeholder {
+    <p>.</p>
+    } @loading (minimum 1s) {
+        <p>Cargando comentarios...</p>
+    }
+</div>
+
+
+
 
 <!-- <router-outlet /> -->
