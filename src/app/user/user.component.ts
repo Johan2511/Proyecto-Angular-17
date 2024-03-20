@@ -10,5 +10,15 @@ import { GamesComponent } from '../games/games.component';
 })
 export class UserComponent {
   username = 'Johan2511';
-  isLoggedIn = true;
+  isLoggedIn = false; //<--- está funcionando como un state
+  favGame = '';
+
+  getfavorite(gameName: string) {
+    this.favGame = gameName;
+  }
+
+
+  greet () {
+    alert('¡Hola!')
+  }
 }
