@@ -1,0 +1,9 @@
+<ul>
+    <!-- //Forma antigua -->
+    <!-- <li **ngFor="let game of  games">
+        <a href="{{game.id}}">{{game.name}} </a>
+    </li> -->
+    @for (game of games; track game.id) {
+        <li>{{game.name}} </li>
+    }
+</ul>
